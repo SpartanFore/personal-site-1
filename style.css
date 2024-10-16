@@ -65,7 +65,7 @@ h3 {
 
 .parent {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(1, 1fr);
     width: 50%;
     margin: 70px auto 0 auto;
@@ -84,6 +84,15 @@ h3 {
   background: linear-gradient(300deg, #8c00ff, #ff4c82, #ff8037);
 }
 
+.card {
+  display: flex;
+  border: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 3rem;
+  @media (max-width: 800px) {flex-wrap: wrap;}
+}
 
 
 
